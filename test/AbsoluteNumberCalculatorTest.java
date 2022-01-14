@@ -16,6 +16,9 @@ public class AbsoluteNumberCalculatorTest {
     public void AbsNumberTestNegative1() {
         int expectedValue = -1;
         int actualValue = AbsoluteNumberCalculator.findAbsoluteNumber(-1);
+        if (expectedValue != actualValue) {
+            throw new RuntimeException("Invalid");
+        }
         assertEquals(expectedValue, actualValue);
     }
 }
